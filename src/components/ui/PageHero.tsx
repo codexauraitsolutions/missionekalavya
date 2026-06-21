@@ -3,6 +3,7 @@ interface PageHeroProps {
   subtitle?: string;
 }
 
+
 export default function PageHero({ title, subtitle }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden text-white text-center pt-32 pb-16 bg-gradient-to-br from-red-dark via-red to-[#4a1500]">
