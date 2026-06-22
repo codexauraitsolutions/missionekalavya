@@ -39,7 +39,7 @@ export default function EToolkitPage() {
                   <h3 className="text-red font-bold mb-2 relative z-10">{t.title}</h3>
                   <p className="text-[#555] text-sm relative z-10">{t.text}</p>
                   <a href="#" className="inline-block mt-auto pt-3.5 text-red font-bold text-[13.5px] hover:text-orange hover:tracking-wide transition-all relative z-10">
-                    {t.cta}
+                    
                   </a>
                 </div>
               </Reveal>
