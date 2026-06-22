@@ -22,11 +22,11 @@ export default function DemoRegistrationForm() {
       <StudentRegistrationFields />
 
       <div className="form-group">
-        <label className="block mb-1.5 font-semibold text-sm text-dark">Preferred Demo Class Date</label>
+        <label className="block mb-1.5 font-semibold text-sm text-dark">Preferred Date</label>
         <input type="date" name="preferredDate" className="input-field" />
       </div>
       <div className="form-group">
-        <label className="block mb-1.5 font-semibold text-sm text-dark">Preferred Time Slot</label>
+        <label className="block mb-1.5 font-semibold text-sm text-dark">Preferred Time</label>
         <select name="preferredSlot" className="input-field">
           <option>Morning (10 AM - 12 PM)</option>
           <option>Afternoon (2 PM - 4 PM)</option>
@@ -41,7 +41,7 @@ export default function DemoRegistrationForm() {
         disabled={status === 'submitting'}
         className="w-full bg-gradient-to-br from-orange to-[#e08a00] text-white font-bold py-3.5 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-all disabled:opacity-60 disabled:hover:translate-y-0"
       >
-        {status === 'submitting' ? 'Submitting...' : 'Register for Free Demo'}
+        {status === 'submitting' ? 'Submitting...' : 'Submit'}
       </button>
     </form>
   );

@@ -5,6 +5,19 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 
 const FAQS = [
   { question: 'What is Mission Ekalavya?', answer: "Mission Ekalavya is India's first structured UPSC foundation program designed specifically for school students from Class 6 to Class 12, integrating NCERT learning with competitive exam preparation." },
+{ 
+    question: 'Why Start Early?', 
+    answer: `The Civil Services Examination is not merely an examination. It is a journey that requires:
+•	Strong NCERT Understanding 
+•	Current Affairs Awareness 
+•	Writing Skills 
+•	Critical Thinking 
+•	Leadership Qualities 
+•	Social Awareness 
+Mission Ekalavya develops these abilities from school age itself.`
+  },
+
+
   { question: 'Who can join this program?', answer: 'Students currently studying in Classes 6 to 12 can join Mission Ekalavya. We have different batches for different grade levels.' },
   { question: 'Is the program completely online?', answer: 'Yes, Mission Ekalavya is a fully online program with live interactive classes, recorded sessions, and online tests.' },
   { question: 'Are recordings available if I miss a class?', answer: 'Yes, all live classes are recorded and available in your student dashboard for later viewing.' },

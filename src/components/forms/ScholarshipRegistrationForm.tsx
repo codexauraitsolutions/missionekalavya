@@ -35,7 +35,7 @@ export default function ScholarshipRegistrationForm() {
         disabled={status === 'submitting'}
         className="w-full bg-gradient-to-br from-orange to-[#e08a00] text-white font-bold py-3.5 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-all disabled:opacity-60 disabled:hover:translate-y-0"
       >
-        {status === 'submitting' ? 'Submitting...' : 'Register for Scholarship Test'}
+        {status === 'submitting' ? 'Submitting...' : 'Submit'}
       </button>
     </form>
   );

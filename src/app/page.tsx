@@ -85,22 +85,25 @@ export default function HomePage() {
           <h1 className="animate-fade-up text-[58px] leading-[1.08] font-extrabold tracking-tight mb-5 bg-gradient-to-br from-white via-white to-yellow bg-clip-text text-transparent">
             MISSION EKALAVYA
           </h1>
-          <p className="animate-fade-up text-[21px] font-semibold text-yellow mb-3.5" style={{ animationDelay: '100ms' }}>
-            Your Future Starts in Your Pocket
-          </p>
+          <h2 className="animate-fade-up text-[21px] font-semibold text-yellow mb-3.5" style={{ animationDelay: '100ms' }}>
+            Nurturing Young Brains for Tomorrow's Leaders
+          </h2>
+          <h3 className="animate-fade-up text-[19px] font-semibold text-yellow mb-3.5" style={{ animationDelay: '140ms' }}>
+            Building the Future Civil Servants, Administrators, Scientists, Leaders, and Nation Builders of India.
+          </h3>
           <p className="animate-fade-up text-[17px] opacity-90 max-w-[680px] mx-auto mb-9 leading-relaxed" style={{ animationDelay: '180ms' }}>
-            Unlock a world of knowledge with the Mission Ekalavya Mobile App. Built exclusively for young aspirants, the app offers a complete digital learning ecosystem featuring live classes, recorded lectures, current affairs, quizzes, e-books, mentorship, and performance tracking. Stay connected to your learning journey anytime, anywhere, and take one step closer to becoming tomorrow&apos;s leader.
-          </p>
+            Mission Ekalavya is a pioneering initiative by CSB IAS Academy designed to introduce students from Classes 6 to 12 to the world of knowledge, leadership, critical thinking, and competitive excellence. Through structured NCERT learning, current affairs, personality development, essay writing, and mentorship, we prepare students for success in academics, competitive examinations, and life.           </p>
           <div className="animate-fade-up flex gap-4 justify-center flex-wrap" style={{ animationDelay: '260ms' }}>
             <Link href="/demo-registration" className="inline-block bg-gradient-to-br from-orange to-[#e08a00] text-white font-bold px-7 py-3 rounded-lg shadow-lg shadow-orange/35 hover:-translate-y-1 hover:shadow-xl transition-all">
               ✅ Enroll Now
             </Link>
+            <Link href="/contact" className="inline-block border-2 border-white/75 text-white font-bold px-7 py-3 rounded-lg hover:bg-white hover:text-red transition-all">
+              💬 	Book Free Counseling
+            </Link>
             <a href="/assets/brochure.pdf" className="inline-block border-2 border-white/75 text-white font-bold px-7 py-3 rounded-lg hover:bg-white hover:text-red transition-all">
               📥 Download Brochure
             </a>
-            <Link href="/contact" className="inline-block border-2 border-white/75 text-white font-bold px-7 py-3 rounded-lg hover:bg-white hover:text-red transition-all">
-              💬 Free Counseling
-            </Link>
+
           </div>
         </div>
       </section>
@@ -363,7 +366,7 @@ export default function HomePage() {
           <p className="text-lg opacity-90 mb-9">Join India&apos;s Best UPSC Foundation Program for School Students</p>
           <div className="flex gap-4.5 justify-center flex-wrap">
             <Link href="/demo-registration" className="inline-block bg-gradient-to-br from-orange to-[#e08a00] text-white font-bold px-10 py-4 rounded-lg shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all">
-              Register for Free Demo Class
+              Book Your Appointment
             </Link>
             <Link href="/scholarship-registration" className="inline-block border-2 border-white/75 text-white font-bold px-10 py-4 rounded-lg hover:bg-white hover:text-red transition-all">
               Apply for Scholarship Test

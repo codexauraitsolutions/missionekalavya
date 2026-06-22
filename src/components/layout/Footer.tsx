@@ -14,9 +14,10 @@ export default function Footer() {
               Mission Ekalavya
             </h3>
             <p className="text-white/65 text-sm leading-relaxed">
-              India&apos;s First Structured UPSC Foundation Program for Students from
-              Class 6 to Class 12.
+              Nurturing Young Brains for Tomorrow's Leaders
             </p>
+            <br />
+            <p className="text-white/65 text-sm leading-relaxed">Building the next generation of informed citizens, responsible leaders, and future civil servants through knowledge, discipline, and excellence. 🇮🇳</p>
           </div>
 
           <div>
@@ -81,18 +82,18 @@ export default function Footer() {
             </p>
             <p className="text-white/65 text-sm flex items-start gap-2 mb-2">
               <Phone size={15} className="mt-0.5 flex-shrink-0 text-orange" />
-              +91-XXXXXXXXXX
+              +91 89776 25796
             </p>
             <p className="text-white/65 text-sm flex items-start gap-2 mb-4">
               <Mail size={15} className="mt-0.5 flex-shrink-0 text-orange" />
-              info@missionekalavya.com
+           missionekalavya.csb@gmail.com
             </p>
             <div className="flex items-center gap-2.5">
               {[
-                { Icon: Youtube, href: '#' },
-                { Icon: Facebook, href: '#' },
-                { Icon: Instagram, href: '#' },
-                { Icon: Send, href: '#' },
+                { Icon: Youtube, href: 'www.youtube.com/@MISSIONEKALAVYA-CSBIAS' },
+                { Icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61589084131841 ' },
+                { Icon: Instagram, href: 'https://www.instagram.com/missionekalavya_csb_ias/?hl=en ' },
+                { Icon: Send, href: 'https://whatsapp.com/channel/0029Vb7q6Z9EFeXl0WTTkY40 ' },
               ].map(({ Icon, href }, i) => (
                 <a
                   key={i}

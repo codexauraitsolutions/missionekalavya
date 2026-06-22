@@ -4,15 +4,17 @@ import CTASection from '@/components/ui/CTASection';
 import Reveal from '@/components/ui/Reveal';
 
 const TOOLKIT = [
-  { icon: 'fa-book', title: 'NCERT eBooks', text: 'Complete NCERT textbooks for Classes 6-12', cta: 'Download →' },
-  { icon: 'fa-map', title: 'Atlas & Maps', text: 'Detailed maps for Geography preparation', cta: 'Download →' },
-  { icon: 'fa-calendar-alt', title: 'India Year Book', text: 'Latest India Year Book for current affairs', cta: 'Download →' },
-  { icon: 'fa-newspaper', title: 'Daily Current Affairs', text: 'Updated daily with important news', cta: 'Access →' },
-  { icon: 'fa-file-alt', title: 'Digital Newspaper', text: 'E-newspaper for daily reading', cta: 'Read →' },
-  { icon: 'fa-question-circle', title: 'Weekly Quizzes', text: 'Test your knowledge every week', cta: 'Start →' },
-  { icon: 'fa-file-pdf', title: 'Previous Year Questions', text: 'PYQs for UPSC and other exams', cta: 'Download →' },
-  { icon: 'fa-video', title: 'Recorded Lectures', text: 'Access to all recorded sessions', cta: 'Watch →' },
-  { icon: 'fa-chart-line', title: 'Performance Analytics', text: 'Track your progress and improvement', cta: 'View →' },
+    // { icon: 'fa-book', title: 'NCERT eBooks', text: 'Complete NCERT textbooks for Classes 6-12', cta: 'Download →' },
+
+  { icon: 'fa-book', title: 'NCERT eBooks', text: 'Complete NCERT textbooks for Classes 6-12' },
+  { icon: 'fa-map', title: 'Atlas & Maps', text: 'Detailed maps for Geography preparation' },
+  { icon: 'fa-calendar-alt', title: 'India Year Book', text: 'Latest India Year Book for current affairs' },
+  { icon: 'fa-newspaper', title: 'Daily Current Affairs', text: 'Updated daily with important news' },
+  { icon: 'fa-file-alt', title: 'Digital Newspaper', text: 'E-newspaper for daily reading'},
+  { icon: 'fa-question-circle', title: 'Weekly Quizzes', text: 'Test your knowledge every week' },
+  { icon: 'fa-file-pdf', title: 'Previous Year Questions', text: 'PYQs for UPSC and other exams'},
+  { icon: 'fa-video', title: 'Recorded Lectures', text: 'Access to all recorded sessions' },
+  { icon: 'fa-chart-line', title: 'Performance Analytics', text: 'Track your progress and improvement' },
 ];
 
 const STEPS = [

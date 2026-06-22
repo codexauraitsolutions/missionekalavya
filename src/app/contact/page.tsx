@@ -4,10 +4,10 @@ import CTASection from '@/components/ui/CTASection';
 import ContactForm from '@/components/forms/ContactForm';
 
 const OFFICES = [
-  { icon: 'fa-map-marker-alt', title: 'Hyderabad Office', lines: ['CSB IAS Academy, Near GVK Mall,', 'Banjara Hills, Hyderabad - 500034'] },
-  { icon: 'fa-map-marker-alt', title: 'Vijayawada Office', lines: ['CSB IAS Academy, MG Road,', 'Vijayawada - 520001'] },
-  { icon: 'fa-phone-alt', title: 'Phone Numbers', lines: ['+91-XXXXXXXXXX', '+91-XXXXXXXXXX'] },
-  { icon: 'fa-envelope', title: 'Email Addresses', lines: ['info@missionekalavya.com', 'support@missionekalavya.com', 'admissions@missionekalavya.com'] },
+  { icon: 'fa-map-marker-alt', title: 'Hyderabad Office', lines: [' Bala Latha’s Tushara building, Near Sub- Register Office, Ashok Nagar, Hyderabad, Telangana - 500080.'] },
+  { icon: 'fa-map-marker-alt', title: 'Vijayawada Office', lines: ['CSB IAS ACADEMY, Lagadapati’s Block, Andhra Loyola College, Veterinary Colony, Vijayawada, Andhra Pradesh – 520008'] },
+  { icon: 'fa-phone-alt', title: 'Phone Numbers', lines: ['+91 89776 25796'] },
+  { icon: 'fa-envelope', title: 'Email Addresses', lines: ['missionekalavya.csb@gmail.com'] },
   { icon: 'fa-clock', title: 'Working Hours', lines: ['Monday - Saturday: 9:00 AM - 7:00 PM', 'Sunday: Closed'] },
 ];
 

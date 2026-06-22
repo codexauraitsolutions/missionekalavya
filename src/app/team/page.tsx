@@ -5,14 +5,14 @@ import CTASection from '@/components/ui/CTASection';
 import Reveal from '@/components/ui/Reveal';
 
 const TEAM = [
-  { name: 'Dr. Suresh Kumar', role: 'Founder & Chief Mentor', bio: 'Ex-IAS Officer with 15+ years of experience in civil services training', color: '9b0000' },
-  { name: 'Prof. Meena Sharma', role: 'History Faculty', bio: 'PhD in Ancient History, 12+ years teaching experience', color: 'f89d01' },
-  { name: 'Rajiv Reddy', role: 'Geography Expert', bio: 'Former UPSC topper, specializes in Geography & Environment', color: '9b0000' },
-  { name: 'Dr. Anjali Desai', role: 'Polity Faculty', bio: 'LLM, PhD in Constitutional Law, 10+ years experience', color: 'f89d01' },
-  { name: 'Vikram Singh', role: 'Economics Faculty', bio: 'MA Economics, former Economic Advisor', color: '9b0000' },
-  { name: 'Priya Patel', role: 'Personality Development Coach', bio: 'Certified Soft Skills Trainer, Motivational Speaker', color: 'f89d01' },
-  { name: 'Dr. Ravi Shankar', role: 'Science Faculty', bio: 'PhD in Physics, 8+ years experience in competitive exam training', color: '9b0000' },
-  { name: 'Neha Gupta', role: 'Current Affairs Expert', bio: 'Former journalist, specializes in current affairs analysis', color: 'f89d01' },
+  { name: 'Balalatha Madam ', role: 'Current Affirs & Motivation', bio: 'Ex-IAS Officer with 15+ years of experience in civil services training', color: '9b0000' },
+  { name: 'Umesh Reddy Sir ', role: 'History', bio: 'PhD in Ancient History, 12+ years teaching experience', color: 'f89d01' },
+  { name: 'Rahul Tiwari Sir ', role: 'Econmy & Current Affairs', bio: 'Former UPSC topper, specializes in Geography & Environment', color: '9b0000' },
+  { name: 'Devanad Sir ', role: 'Polity & Governance', bio: 'LLM, PhD in Constitutional Law, 10+ years experience', color: 'f89d01' },
+  { name: 'Raja Sir ', role: 'Geography & International Relations', bio: 'MA Economics, former Economic Advisor', color: '9b0000' },
+  { name: 'Vinay Sir ', role: 'Communication Skills', bio: 'Certified Soft Skills Trainer, Motivational Speaker', color: 'f89d01' },
+  // { name: 'Dr. Ravi Shankar', role: 'Science Faculty', bio: 'PhD in Physics, 8+ years experience in competitive exam training', color: '9b0000' },
+  // { name: 'Neha Gupta', role: 'Current Affairs Expert', bio: 'Former journalist, specializes in current affairs analysis', color: 'f89d01' },
 ];
 
 const WHY_TEAM = [
@@ -25,7 +25,8 @@ const WHY_TEAM = [
 export default function TeamPage() {
   return (
     <>
-      <PageHero title="Our Expert Team" subtitle="Learn from the best mentors and educators" />
+      <PageHero title="Our Expert Faculty Team
+" subtitle="Learn from the best mentors and educators" />
 
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">

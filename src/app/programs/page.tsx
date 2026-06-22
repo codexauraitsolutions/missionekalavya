@@ -13,7 +13,7 @@ const COMPARISON = [
   ['Mock Tests', 'Monthly', 'Weekly'],
   ['Personality Development', 'No', 'Yes'],
   ['Leadership Training', 'No', 'Yes'],
-  ['Price', '₹45,000', '₹75,000'],
+  ['Price', '₹15,000', '₹30,000'],
 ];
 
 export default function ProgramsPage() {

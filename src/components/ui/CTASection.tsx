@@ -14,7 +14,7 @@ export default function CTASection({
   subtitle,
   primaryText = 'Register for Free Demo Class',
   primaryHref = '/demo-registration',
-  secondaryText = 'Apply for Scholarship Test',
+  secondaryText = 'Register For Upcoming Boot Camp Programme',
   secondaryHref = '/scholarship-registration',
 }: CTASectionProps) {
   return (
