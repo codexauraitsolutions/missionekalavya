@@ -53,7 +53,7 @@ export default function PricingPage() {
 
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
             {PLANS.map((plan, i) => (
               <Reveal key={plan.title} delay={i * 80}>
                 <div
@@ -101,11 +101,11 @@ export default function PricingPage() {
       <section className="py-24 bg-light">
         <div className="max-w-[1200px] mx-auto px-6">
           <SectionTitle>What&apos;s Included in Both Programs?</SectionTitle>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5.5 mt-11">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-11">
             {INCLUDED.map((item, i) => (
               <Reveal key={item.title} delay={i * 60}>
                 <div className="group bg-white p-7.5 rounded-2xl text-center border border-black/[0.06] shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all h-full">
-                  <i className="fas fa-check-circle text-[40px] text-orange mb-3.5 block group-hover:scale-110 group-hover:text-red transition-all" />
+                  <i className="fas fa-check-circle text-[40px] text-orange mb-3.5 block group-hover:text-red" />
                   <h3 className="text-red font-bold mb-2">{item.title}</h3>
                   <p className="text-[#555] text-sm">{item.text}</p>
                 </div>
@@ -118,7 +118,7 @@ export default function PricingPage() {
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
           <SectionTitle>Frequently Asked Questions</SectionTitle>
-          <div className="max-w-[760px] mx-auto space-y-4 mt-11">
+          <div className="max-w-[760px] mx-auto space-y-6 mt-11">
             {FAQ_PREVIEW.map((f) => (
               <div key={f.q} className="bg-light p-6 rounded-xl">
                 <h3 className="font-bold text-dark mb-1.5">{f.q}</h3>

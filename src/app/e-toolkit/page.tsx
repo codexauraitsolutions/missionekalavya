@@ -30,12 +30,12 @@ export default function EToolkitPage() {
 
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {TOOLKIT.map((t, i) => (
               <Reveal key={t.title} delay={i * 50}>
                 <div className="group bg-white p-8.5 rounded-2xl text-center border border-black/[0.06] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all relative overflow-hidden h-full flex flex-col">
                   <div className="absolute inset-0 bg-gradient-to-br from-orange/5 to-red/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <i className={`fas ${t.icon} text-[46px] text-orange mb-3.5 block group-hover:scale-110 group-hover:text-red transition-all relative z-10`} />
+                  <i className={`fas ${t.icon} text-[46px] text-orange mb-3.5 block group-hover:text-red relative z-10`} />
                   <h3 className="text-red font-bold mb-2 relative z-10">{t.title}</h3>
                   <p className="text-[#555] text-sm relative z-10">{t.text}</p>
                   <a href="#" className="inline-block mt-auto pt-3.5 text-red font-bold text-[13.5px] hover:text-orange hover:tracking-wide transition-all relative z-10">
@@ -51,7 +51,7 @@ export default function EToolkitPage() {
       <section className="py-24 bg-light">
         <div className="max-w-[1200px] mx-auto px-6">
           <SectionTitle>How to Access E-Toolkit?</SectionTitle>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-11">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-11">
             {STEPS.map((s, i) => (
               <div key={s.title} className="bg-white p-7.5 rounded-2xl text-center shadow-sm border border-black/[0.06] hover:shadow-lg hover:-translate-y-2 transition-all">
                 <div className="w-[50px] h-[50px] bg-gradient-to-br from-red to-red-dark text-white rounded-full flex items-center justify-center text-xl font-extrabold mx-auto mb-3.5 shadow-md">

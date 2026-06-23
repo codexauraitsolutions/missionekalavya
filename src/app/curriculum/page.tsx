@@ -31,7 +31,7 @@ export default function CurriculumPage() {
               <Reveal key={s.title} delay={i * 60}>
                 <div className="group bg-white p-7.5 rounded-2xl border border-black/[0.06] shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all relative overflow-hidden h-full flex flex-col">
                   <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-red to-orange scale-y-0 group-hover:scale-y-100 origin-top transition-transform" />
-                  <div className="text-[44px] mb-3.5 group-hover:scale-110 group-hover:-rotate-3 transition-transform">{s.icon}</div>
+                  <div className="site-icon text-[44px] mb-3.5">{s.icon}</div>
                   <h2 className="text-red text-[21px] font-extrabold mb-3.5">{s.title}</h2>
                   <ul className="space-y-2">
                     {s.items.map((it) => (
@@ -55,7 +55,7 @@ export default function CurriculumPage() {
               <Reveal key={f.title} delay={i * 70}>
                 <div className="group bg-white p-8 rounded-2xl text-center border border-black/[0.06] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all relative overflow-hidden h-full flex flex-col">
                   <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-orange to-red scale-x-0 group-hover:scale-x-100 transition-transform" />
-                  <i className={`fas ${f.icon} text-[44px] text-orange mb-4 block group-hover:scale-110 group-hover:-rotate-6 group-hover:text-red transition-all`} />
+                  <i className={`fas ${f.icon} text-[44px] text-orange mb-4 block group-hover:text-red`} />
                   <h3 className="text-red font-bold mb-2.5">{f.title}</h3>
                   <p className="text-[#555] text-sm">{f.text}</p>
                 </div>

@@ -97,7 +97,7 @@ export default function Navbar() {
                   onClick={() => setMoreOpen((v) => !v)}
                   className={`flex items-center gap-1 px-3 py-2 text-[13px] font-semibold rounded-md transition-colors ${
                     moreOpen || overflowLg.some((l) => isActive(l.href))
-                      ? 'text-red'
+                      ? 'text-black'
                       : 'text-dark hover:text-red'
                   }`}
                 >
@@ -111,7 +111,7 @@ export default function Navbar() {
                         key={link.href}
                         href={link.href}
                         className={`block px-4 py-2.5 text-[13.5px] font-medium transition-colors ${
-                          isActive(link.href) ? 'text-red bg-light' : 'text-dark hover:text-red hover:bg-light'
+                          isActive(link.href) ? 'text-black bg-light' : 'text-dark hover:text-red hover:bg-light'
                         }`}
                       >
                         {link.label}
@@ -129,7 +129,7 @@ export default function Navbar() {
                   onClick={() => setMoreOpen((v) => !v)}
                   className={`flex items-center gap-1 px-3 py-2 text-[13px] font-semibold rounded-md transition-colors ${
                     moreOpen || overflowXl.some((l) => isActive(l.href))
-                      ? 'text-red'
+                      ? 'text-black'
                       : 'text-dark hover:text-red'
                   }`}
                 >
@@ -143,7 +143,7 @@ export default function Navbar() {
                         key={link.href}
                         href={link.href}
                         className={`block px-4 py-2.5 text-[13.5px] font-medium transition-colors ${
-                          isActive(link.href) ? 'text-red bg-light' : 'text-dark hover:text-red hover:bg-light'
+                          isActive(link.href) ? 'text-black bg-light' : 'text-dark hover:text-red hover:bg-light'
                         }`}
                       >
                         {link.label}
@@ -195,7 +195,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`flex items-center px-6 py-3 text-[15px] font-medium border-b border-black/[0.04] transition-colors ${
-                    isActive(link.href) ? 'text-red bg-light' : 'text-dark'
+                    isActive(link.href) ? 'text-black bg-light' : 'text-dark'
                   }`}
                   style={{ transitionDelay: `${i * 20}ms` }}
                 >
@@ -230,13 +230,13 @@ function NavItem({ link, active }: { link: { href: string; label: string }; acti
       <Link
         href={link.href}
         className={`relative block px-3 py-2 mx-0.5 text-[13px] font-semibold whitespace-nowrap rounded-md transition-colors duration-200 ${
-          active ? 'text-red' : 'text-dark hover:text-red'
+          active ? 'text-black' : 'text-dark hover:text-red'
         }`}
       >
         {link.label}
         <span
-          className={`absolute left-3 right-3 -bottom-px h-[2px] rounded-full bg-gradient-to-r from-red to-orange transition-transform duration-300 origin-left ${
-            active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+          className={`absolute left-3 right-3 -bottom-px h-[2px] rounded-full transition-transform duration-300 origin-left ${
+            active ? 'scale-x-100 bg-black' : 'scale-x-0 bg-gradient-to-r from-red to-orange group-hover:scale-x-100'
           }`}
         />
       </Link>

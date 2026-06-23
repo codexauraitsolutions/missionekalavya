@@ -45,7 +45,7 @@ export default function GalleryPage() {
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
           <SectionTitle>Video Highlights</SectionTitle>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-11">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-11">
             {VIDEOS.map((v) => (
               <div
                 key={v.title}

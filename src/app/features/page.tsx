@@ -26,7 +26,7 @@ export default function FeaturesPage() {
               <Reveal key={f.title} delay={i * 50}>
                 <div className="group bg-white p-8 rounded-2xl text-center border border-black/[0.06] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all relative overflow-hidden h-full flex flex-col">
                   <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-orange to-red scale-x-0 group-hover:scale-x-100 transition-transform" />
-                  <i className={`fas ${f.icon} text-[44px] text-orange mb-4 block group-hover:scale-110 group-hover:-rotate-6 group-hover:text-red transition-all`} />
+                  <i className={`fas ${f.icon} text-[44px] text-orange mb-4 block group-hover:text-red`} />
                   <h3 className="text-red font-bold mb-2.5 text-base">{f.title}</h3>
                   <p className="text-[#555] text-sm">{f.text}</p>
                 </div>
