@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 import Reveal from '@/components/ui/Reveal';
 import SectionTitle from '@/components/ui/SectionTitle';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { ChevronUp } from 'lucide-react';
 
 const BENEFITS = [
   { icon: '🧠', title: 'Critical Thinking', text: 'Develop analytical and problem-solving skills from an early age.' },
@@ -75,6 +80,28 @@ const TESTIMONIALS = [
 ];
 
 export default function HomePage() {
+  // State for scroll to top button visibility
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
       {/* Hero */}
@@ -358,6 +385,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ========== APP IMAGE SECTION (ONLY IMAGE - NO CONTENT) ========== */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="flex justify-center items-center">
+            <Image
+              src="/images/app.png"
+              alt="Mission Ekalavya Learners' Hub App"
+              width={900}
+              height={700}
+              className="rounded-2xl shadow-2xl object-contain w-full max-w-5xl h-auto"
+              priority
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="relative overflow-hidden text-center bg-gradient-to-br from-[#1a1a1a] via-dark to-[#4a0000] text-white py-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_50%,rgba(248,157,1,0.16)_0%,transparent_45%),radial-gradient(circle_at_90%_50%,rgba(248,226,59,0.1)_0%,transparent_45%)] pointer-events-none" />
@@ -369,11 +412,22 @@ export default function HomePage() {
               Book Your Appointment
             </Link>
             <Link href="/scholarship-registration" className="inline-block border-2 border-white/75 text-white font-bold px-10 py-4 rounded-lg hover:bg-white hover:text-red transition-all">
-              Apply for Scholarship Test
+              Register for Next Boot Camp
             </Link>
           </div>
         </div>
       </section>
+
+      {/* ========== SCROLL TO TOP BUTTON ========== */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-red to-red-dark text-white shadow-lg shadow-red/30 hover:shadow-xl hover:shadow-red/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group border border-white/20"
+          aria-label="Scroll to top"
+        >
+          <ChevronUp className="w-7 h-7 group-hover:scale-110 transition-transform" />
+        </button>
+      )}
     </>
   );
 }

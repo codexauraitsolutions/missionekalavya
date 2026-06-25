@@ -10,7 +10,7 @@ export default function DemoRegistrationPage() {
         <div className="max-w-[580px] mx-auto px-6">
           <div className="bg-white p-11 rounded-[22px] shadow-lg border border-black/[0.06]">
             <div className="text-center mb-7.5">
-              <h2 className="text-red text-[26px] font-extrabold mb-2">Register for Free Demo Class</h2>
+              <h2 className="text-red text-[26px] font-extrabold mb-2">Enroll Your Details for Enquiry</h2>
               <p className="text-[#555] text-sm">
                 Fill the form below. Our counselor will contact you to schedule the demo class.
               </p>

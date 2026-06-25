@@ -12,7 +12,7 @@ interface CTASectionProps {
 export default function CTASection({
   title,
   subtitle,
-  primaryText = 'Register for Free Demo Class',
+  primaryText = 'Enroll Your Details for Enquiry',
   primaryHref = '/demo-registration',
   secondaryText = 'Register For Upcoming Boot Camp Programme',
   secondaryHref = '/scholarship-registration',
