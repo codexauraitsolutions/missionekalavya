@@ -56,6 +56,25 @@ svg.lucide:not([class*="transition-transform"]),
   will-change: transform;
 }
 
+.no-spin i[class*="fa-"],
+.no-spin .site-icon {
+  animation: none !important;
+}
+
+.group:hover .no-spin i[class*="fa-"],
+.group:hover .no-spin .site-icon {
+  animation: none !important;
+  transform: rotate(45deg) !important;
+}
+
+.no-spin {
+  transform: none !important;
+}
+
+.group:hover .no-spin {
+  transform: none !important;
+}
+
 /* Stagger grid/card icons so they feel alive, not synchronized */
 .grid > *:nth-child(1) i[class*="fa-"],
 .grid > *:nth-child(1) svg.lucide,
@@ -91,14 +110,19 @@ i[class*="fa-"].block,
   animation: iconSlowSpin 14s linear infinite;
 }
 
+.no-spin .site-icon,
+.no-spin i[class*="fa-"] {
+  animation: none !important;
+}
+
 /* Hover: full spin on cards, links, and buttons */
-.group:hover i[class*="fa-"],
+.group:not(:has(.no-spin)):hover i[class*="fa-"],
 a:hover i[class*="fa-"],
 button:hover i[class*="fa-"],
-.group:hover svg.lucide,
+.group:not(:has(.no-spin)):hover svg.lucide,
 a:hover svg.lucide,
 button:hover svg.lucide,
-.group:hover .site-icon,
+.group:not(:has(.no-spin)):hover .site-icon,
 a:hover .site-icon,
 button:hover .site-icon {
   animation: iconSpin 0.65s cubic-bezier(.34, 1.4, .64, 1) forwards;

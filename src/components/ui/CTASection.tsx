@@ -23,7 +23,7 @@ export default function CTASection({
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         <h2 className="text-[40px] font-extrabold mb-4 tracking-tight">{title}</h2>
         <p className="text-lg opacity-90 mb-9">{subtitle}</p>
-        <div className="flex gap-4.5 justify-center flex-wrap">
+        <div className="flex gap-[1rem] justify-center flex-wrap">
           <Link
             href={primaryHref}
             className="inline-block bg-gradient-to-br from-orange to-[#e08a00] text-white font-bold px-10 py-4 rounded-lg shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all"

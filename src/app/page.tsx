@@ -125,12 +125,11 @@ export default function HomePage() {
               ✅ Enroll Now
             </Link>
             <Link href="/contact" className="inline-block border-2 border-white/75 text-white font-bold px-7 py-3 rounded-lg hover:bg-white hover:text-red transition-all">
-              💬 	Book Free Counseling
+              💬 Book Free Counseling
             </Link>
             <a href="/assets/brochure.pdf" className="inline-block border-2 border-white/75 text-white font-bold px-7 py-3 rounded-lg hover:bg-white hover:text-red transition-all">
               📥 Download Brochure
             </a>
-
           </div>
         </div>
       </section>
@@ -213,14 +212,16 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-11">
             {SUBJECTS.map((s, i) => (
               <Reveal key={s.title} delay={i * 60}>
-                <div className="group bg-white p-7.5 rounded-2xl border border-black/[0.06] shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all relative overflow-hidden h-full flex flex-col">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-red to-orange scale-y-0 group-hover:scale-y-100 origin-top transition-transform" />
-                  <div className="site-icon text-[44px] mb-3.5">{s.icon}</div>
-                  <h2 className="text-red text-[21px] font-extrabold mb-3.5">{s.title}</h2>
-                  <ul className="space-y-2">
+                <div className="group bg-white p-8 rounded-3xl border-2 border-transparent shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300 relative overflow-hidden h-full flex flex-col">
+                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red to-orange" />
+                  <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-orange to-red rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <div className="site-icon text-white text-2xl">{s.icon}</div>
+                  </div>
+                  <h2 className="text-red text-xl font-extrabold mb-4">{s.title}</h2>
+                  <ul className="space-y-3">
                     {s.items.map((it) => (
-                      <li key={it} className="text-sm text-[#555] flex items-center gap-2 border-b border-[#f0f0f0] py-1.5">
-                        <span className="text-orange font-bold text-xs">→</span> {it}
+                      <li key={it} className="text-left text-gray-600 text-sm flex items-center gap-3 border-b border-[#f0f0f0] py-2.5">
+                        <span className="text-orange font-bold text-lg">→</span> {it}
                       </li>
                     ))}
                   </ul>
@@ -231,21 +232,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* E-Toolkit */}
+      {/* E-Toolkit - UPDATED DESIGN */}
       <section className="py-24 bg-light">
         <div className="max-w-[1200px] mx-auto px-6">
           <SectionTitle subtitle="Everything you need for UPSC preparation at your fingertips">
             Digital Learning Resources
           </SectionTitle>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5.5 mt-11">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-11">
             {TOOLKIT.map((t, i) => (
               <Reveal key={t.title} delay={i * 60}>
-                <div className="group bg-white p-8.5 rounded-2xl text-center border border-black/[0.06] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all relative overflow-hidden h-full flex flex-col">
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange/5 to-red/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <i className={`fas ${t.icon} text-[46px] text-orange mb-3.5 block group-hover:text-red relative z-10`} />
-                  <h3 className="text-red font-bold mb-2 relative z-10">{t.title}</h3>
-                  <p className="text-[#555] text-sm relative z-10">{t.text}</p>
-                  <a href="#" className="inline-block mt-auto pt-3.5 text-red font-bold text-[13.5px] hover:text-orange hover:tracking-wide transition-all relative z-10">
+                <div className="group bg-white p-8 rounded-3xl text-center border-2 border-transparent shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300 relative overflow-hidden h-full flex flex-col">
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange/8 to-red/8 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red to-orange" />
+                  <i className={`fas ${t.icon} text-5xl text-orange mb-4 block group-hover:text-red relative z-10 transition-colors duration-300`} />
+                  <h3 className="text-red font-extrabold text-lg mb-3 relative z-10">{t.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed relative z-10 flex-grow">{t.text}</p>
+                  <a href="#" className="inline-block mt-5 text-red font-bold text-sm hover:text-orange hover:tracking-wide transition-all relative z-10 group-hover:underline underline-offset-4">
                     {t.cta}
                   </a>
                 </div>
@@ -255,20 +257,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Building Future Leaders */}
+      {/* Building Future Leaders - UPDATED DESIGN */}
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
           <SectionTitle subtitle="Mission Ekalavya goes beyond academics and focuses on holistic development">
             Building Future Leaders
           </SectionTitle>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5.5 mt-11">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-11">
             {PERSONALITY_FEATURES.map((f, i) => (
               <Reveal key={f.title} delay={i * 60}>
-                <div className="group bg-white p-8 rounded-2xl text-center border border-black/[0.06] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all relative overflow-hidden h-full flex flex-col">
-                  <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-orange to-red scale-x-0 group-hover:scale-x-100 transition-transform" />
-                  <i className={`fas ${f.icon} text-[44px] text-orange mb-4.5 block group-hover:text-red`} />
-                  <h3 className="text-red font-bold mb-2.5 text-base">{f.title}</h3>
-                  <p className="text-[#555] text-sm">{f.text}</p>
+                <div className="group bg-light p-8 rounded-3xl text-center border-2 border-transparent shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300 relative overflow-hidden h-full flex flex-col">
+                  <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-orange to-red" />
+                  <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-orange to-red rounded-full flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <i className={`fas ${f.icon} text-white text-2xl`} />
+                  </div>
+                  <h3 className="text-red font-extrabold text-lg mb-3">{f.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">{f.text}</p>
                 </div>
               </Reveal>
             ))}
@@ -385,7 +389,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ========== APP IMAGE SECTION (ONLY IMAGE - NO CONTENT) ========== */}
+      {/* App Image Section */}
       <section className="py-16 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex justify-center items-center">
@@ -401,24 +405,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Final CTA - UPDATED */}
       <section className="relative overflow-hidden text-center bg-gradient-to-br from-[#1a1a1a] via-dark to-[#4a0000] text-white py-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_50%,rgba(248,157,1,0.16)_0%,transparent_45%),radial-gradient(circle_at_90%_50%,rgba(248,226,59,0.1)_0%,transparent_45%)] pointer-events-none" />
         <div className="max-w-[1200px] mx-auto px-6 relative z-10">
           <h2 className="text-[40px] font-extrabold mb-4 tracking-tight">Start Your Journey Today</h2>
           <p className="text-lg opacity-90 mb-9">Join India&apos;s Best UPSC Foundation Program for School Students</p>
-          <div className="flex gap-4.5 justify-center flex-wrap">
+          <div className="flex gap-[1rem] justify-center flex-wrap"> 
             <Link href="/demo-registration" className="inline-block bg-gradient-to-br from-orange to-[#e08a00] text-white font-bold px-10 py-4 rounded-lg shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all">
               Book Your Appointment
             </Link>
             <Link href="/scholarship-registration" className="inline-block border-2 border-white/75 text-white font-bold px-10 py-4 rounded-lg hover:bg-white hover:text-red transition-all">
-              Register for Next Boot Camp
+              Apply for Scholarship Test
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ========== SCROLL TO TOP BUTTON ========== */}
+      {/* Scroll to Top Button */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}

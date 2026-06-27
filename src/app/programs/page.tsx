@@ -95,20 +95,20 @@ export default function ProgramsPage() {
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
           <SectionTitle>Program Comparison</SectionTitle>
-          <div className="overflow-x-auto mt-11 rounded-2xl shadow-sm">
+          <div className="overflow-x-auto mt-11 rounded-3xl shadow-md">
             <table className="w-full border-collapse bg-white">
               <thead>
                 <tr>
-                  <th className="bg-red text-white font-bold text-left px-4.5 py-3.5 text-sm">Features</th>
-                  <th className="bg-red text-white font-bold text-left px-4.5 py-3.5 text-sm">18 Months Program</th>
-                  <th className="bg-red text-white font-bold text-left px-4.5 py-3.5 text-sm">36 Months Program</th>
+                  <th className="bg-red text-white font-extrabold text-left px-8 py-5 text-base rounded-tl-3xl">Features</th>
+                  <th className="bg-red text-white font-extrabold text-center px-8 py-5 text-base">18 Months Program</th>
+                  <th className="bg-red text-white font-extrabold text-center px-8 py-5 text-base rounded-tr-3xl">36 Months Program</th>
                 </tr>
               </thead>
               <tbody>
                 {COMPARISON.map((row, i) => (
-                  <tr key={i}>
+                  <tr key={i} className="hover:bg-light transition-colors duration-200">
                     {row.map((cell, j) => (
-                      <td key={j} className="px-4.5 py-3.5 text-sm border-b border-black/[0.06]">
+                      <td key={j} className={`px-8 py-5 text-base border-b border-black/[0.06] ${j === 0 ? 'text-left font-semibold text-dark' : 'text-center text-gray-700'}`}>
                         {cell}
                       </td>
                     ))}
