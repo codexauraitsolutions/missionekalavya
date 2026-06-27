@@ -151,7 +151,7 @@ export default function HomePage() {
               <Reveal key={b.title} delay={i * 70}>
                 <div className="group bg-white border border-black/[0.07] rounded-2xl p-9 text-center shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all relative overflow-hidden h-full flex flex-col">
                   <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-red to-orange scale-x-0 group-hover:scale-x-100 origin-left transition-transform" />
-                  <div className="site-icon text-5xl mb-5">{b.icon}</div>
+                  <div className="site-icon text-5xl mb-5 flag-float" style={{ animationDelay: `${i * 0.2}s` }}>{b.icon}</div>
                   <h3 className="text-red font-bold text-[17px] mb-2.5">{b.title}</h3>
                   <p className="text-[#555] text-sm">{b.text}</p>
                 </div>
